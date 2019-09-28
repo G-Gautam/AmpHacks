@@ -29,10 +29,12 @@ def load_data(path):
     return result
 
 data = load_data(path)
+labels = np.random.randint(2, size=data.shape[0])
+labels = np.expand_dims(labels, axis=0)
+labels = np.swapaxes(labels, 0, 1)
 
-print(data.shape)
-
-
+np.save('./training/data.npy', data)
+np.save('./training/labels.npy', labels)
 
 
 
