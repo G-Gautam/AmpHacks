@@ -35,4 +35,9 @@ model.compile(optimizer='adam', loss='mean_squared_error', metrics=['mse'])
 model.fit(X_train, y_train, validation_data=(X_test, y_test), epochs=20)
 
 model.save('cnn_model.h5')  # creates a HDF5 file 'my_model.h5'
+model_json = model.to_json()
 
+with open("cnn_model.json", "w") as json_file:
+    json_file.write(model_json)
+
+model.save_weights("model_weights.h5")
