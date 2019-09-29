@@ -16,7 +16,7 @@ import { AuthService } from "./shared/services/auth.service";
 import { RoommatesComponent } from './components/roommates/roommates.component';
 import { FeaturesComponent } from './components/features/features.component';
 import { RatingModule } from 'ng-starrating';
-
+import { SliderModule } from 'angular-image-slider';
 
 @NgModule({
   declarations: [
@@ -35,7 +35,8 @@ import { RatingModule } from 'ng-starrating';
     AngularFireModule.initializeApp(environment.firebase),
     AngularFireAuthModule,
     AngularFirestoreModule,
-    RatingModule
+    RatingModule,
+    SliderModule
   ],
   providers: [AuthService],
   bootstrap: [AppComponent]

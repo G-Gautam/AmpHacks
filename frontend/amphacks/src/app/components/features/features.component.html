@@ -45,6 +45,16 @@
         <div class="pt-3 pb-2 mb-3 border-bottom">
           <h1 class="h2">Features</h1>
         </div>  
+        <div>
+          <input type=file class = 'btn btn-primary' value = 'Select File' (change)="onSelectFile($event)">
+          <button style ='margin-left: 8%;' class = 'btn btn-primary' (click)=getScore()> Calculate Score</button>
+          <h1 *ngIf='score != 0'>{{score}}</h1>
+        </div>
+        <div *ngFor='let pic of imageArray'>
+          <div style = 'height:400px; width: 400px;'>
+            <img src= '{{pic}}'/>
+          </div>
+        </div>
       </div>
     </main>
 

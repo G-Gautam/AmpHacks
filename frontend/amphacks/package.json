@@ -20,6 +20,7 @@
     "@angular/platform-browser": "~7.1.0",
     "@angular/platform-browser-dynamic": "~7.1.0",
     "@angular/router": "~7.1.0",
+    "angular-image-slider": "0.0.8",
     "bootstrap": "^4.3.1",
     "core-js": "^2.5.4",
     "firebase": "^7.0.0",
