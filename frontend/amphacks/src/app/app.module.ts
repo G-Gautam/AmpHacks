@@ -13,6 +13,9 @@ import { AngularFireAuthModule } from "@angular/fire/auth";
 import { AngularFirestoreModule } from '@angular/fire/firestore';
 import { environment } from '../environments/environment';
 import { AuthService } from "./shared/services/auth.service";
+import { RoommatesComponent } from './components/roommates/roommates.component';
+import { FeaturesComponent } from './components/features/features.component';
+import { RatingModule } from 'ng-starrating';
 
 
 @NgModule({
@@ -22,7 +25,9 @@ import { AuthService } from "./shared/services/auth.service";
     SignInComponent,
     SignUpComponent,
     ForgotPasswordComponent,
-    VerifyEmailComponent
+    VerifyEmailComponent,
+    RoommatesComponent,
+    FeaturesComponent
   ],
   imports: [
     BrowserModule,
@@ -30,6 +35,7 @@ import { AuthService } from "./shared/services/auth.service";
     AngularFireModule.initializeApp(environment.firebase),
     AngularFireAuthModule,
     AngularFirestoreModule,
+    RatingModule
   ],
   providers: [AuthService],
   bootstrap: [AppComponent]

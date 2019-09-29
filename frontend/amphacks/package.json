@@ -23,6 +23,7 @@
     "bootstrap": "^4.3.1",
     "core-js": "^2.5.4",
     "firebase": "^7.0.0",
+    "ng-starrating": "^1.0.7",
     "nodemon": "^1.19.2",
     "rxjs": "~6.3.3",
     "tslib": "^1.9.0",

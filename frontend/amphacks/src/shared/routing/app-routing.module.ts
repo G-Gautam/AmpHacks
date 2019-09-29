@@ -10,6 +10,8 @@ import { ForgotPasswordComponent } from '../../app/components/forgot-password/fo
 import { VerifyEmailComponent } from '../../app/components/verify-email/verify-email.component';
 import { AuthGuard } from "../../app/shared/guard/auth.guard";
 import { SecureInnerPagesGuard } from "../../app/shared/guard/secure-inner-pages.guard.ts.guard";
+import { RoommatesComponent } from 'src/app/components/roommates/roommates.component';
+import { FeaturesComponent } from 'src/app/components/features/features.component';
 
 
 const routes: Routes = [
@@ -18,7 +20,10 @@ const routes: Routes = [
   { path: 'register-user', component: SignUpComponent, canActivate: [SecureInnerPagesGuard]},
   { path: 'dashboard', component: DashboardComponent},
   { path: 'forgot-password', component: ForgotPasswordComponent, canActivate: [SecureInnerPagesGuard] },
-  { path: 'verify-email-address', component: VerifyEmailComponent, canActivate: [SecureInnerPagesGuard] }
+  { path: 'verify-email-address', component: VerifyEmailComponent, canActivate: [SecureInnerPagesGuard] },
+  { path: 'roommates', component: RoommatesComponent, canActivate: [SecureInnerPagesGuard] },
+  { path: 'features', component: FeaturesComponent, canActivate: [SecureInnerPagesGuard] }
+
 ];
 
 @NgModule({
